@@ -1,7 +1,9 @@
 # Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+# This pipeline will build the java selenium test project, and run its tests. 
+# The tests to run can be re-configured if a user specifies a value for the  
+# Tests To Run parameter as per:  
+# https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html 
+# If TestsToRun is left unfilled, all tests will run. Otherwise only matching tests will run. 
 
 trigger:
 - master
